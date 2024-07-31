@@ -12,6 +12,11 @@ public class Main {
         inventory.add(product2);
         System.out.println(inventory);
         
-    
+        Product updatedProduct = new Product("PD001","Samsung Galaxy S24",25, 54999);
+        inventory.update(updatedProduct);
+
+        inventory.delete("PD002");
+
+        System.out.println(inventory.getProduct("PD001"));
     }
 }
